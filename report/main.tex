@@ -1,0 +1,40 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,graphicx,booktabs,hyperref}
+\title{Intrinsic Dimensionality and Geometric Structure in High-Dimensional Text Data}
+\author{Course Project -- Draft}
+\date{November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+This document is a report scaffold. Empirical claims and numerical results will be inserted only after the reproducible pipeline has been executed and validated.
+\end{abstract}
+\tableofcontents
+\section{Introduction}
+Research questions: intrinsic vs. ambient dimensionality; distance concentration; preservation under random projections; text-category geometry.
+\section{Dataset and Preprocessing}
+Describe 20 Newsgroups, TF--IDF, document sampling, sparsity, TruncatedSVD, centering and scaling. Distinguish ambient TF--IDF dimension from the analyzed SVD dimension.
+\section{Intrinsic Dimension Estimation}
+\subsection{PCA criteria}
+\subsection{Levina--Bickel local maximum likelihood}
+\subsection{Grassberger--Procaccia correlation dimension}
+\subsection{Synthetic calibration and uncertainty}
+\section{Geometric and Random Matrix Experiments}
+\subsection{PCA, t-SNE and UMAP}
+\subsection{Johnson--Lindenstrauss projections}
+\subsection{Marchenko--Pastur and shuffled null spectra}
+\subsection{Distance concentration}
+\subsection{Ledoit--Wolf and Mahalanobis ranking}
+\section{Results and Discussion}
+Insert measured tables, figures and interpretations after execution. Compare full sparse and reduced-space geometry where computationally feasible.
+\section{Limitations and Future Work}
+Discuss sample-size limits, text-specific distance metrics, SVD information loss, dependence, null-model assumptions and sensitivity to random seeds.
+\section*{AI Usage Disclosure}
+Document tools, prompts, generated code, manual verification and institutional requirements.
+\begin{thebibliography}{9}
+\bibitem{newsgroups} scikit-learn, The 20 Newsgroups Text Dataset. \url{https://scikit-learn.org/stable/datasets/real_world.html#the-20-newsgroups-text-dataset}
+\bibitem{lb} Levina and Bickel, Maximum Likelihood Estimation of Intrinsic Dimension, 2004.
+\bibitem{jl} Johnson and Lindenstrauss, Extensions of Lipschitz mappings into a Hilbert space, 1984.
+\bibitem{mp} Marchenko and Pastur, Distribution of eigenvalues for some sets of random matrices, 1967.
+\end{thebibliography}
+\end{document}
